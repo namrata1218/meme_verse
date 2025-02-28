@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+ #light {
+    background-color: white;
+    color: black;
+ }
+ #dark{
+    background-color:rgb(19, 10, 32);
+ }
+ #dark .profile-box{
+   background-color: rgb(109, 105, 105);
+   color: black;
+ }
+
+ #light .container{
+    background-color:rgb(250, 247, 247);
+    
+ }
+
+ #dark .share-icon{
+   color: white;
+
+ }
+ #light .content{
+    color: black;
+    
+ }
+
+#light .sun-icon{
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+ #light .sun-icon:hover{
+    
+    
+    padding: 4px;
+ }
+ #dark .moon-icon{
+    color: white;
+    background-color: rgb(23, 150, 218);
+    border-radius: 50%;
+    padding: 4px;
+ }
+
+ #dark .moon-icon:hover{
+    border-radius: 50%;
+    padding: 4px;
+    
+    
+ }
+  
+
+  
