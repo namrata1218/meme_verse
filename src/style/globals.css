@@ -65,7 +65,9 @@ display: flex;
 justify-content: space-between;
  }
 
- 
+ .footer-color{
+   background-color: rgb(5, 5, 37);
+ }
   
 
   

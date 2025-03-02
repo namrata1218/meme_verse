@@ -30,7 +30,7 @@ export default function Leaderboard() {
 
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold text-white text-center mb-4">🔥 Top 10 Most Liked Meme</h1>
+      <h1 className=" content text-3xl font-bold text-white text-center mb-4">🔥 Top 10 Most Liked Meme</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {topMemes.length > 0 ? (
