@@ -110,6 +110,7 @@ justify-content: space-between;
  
  /* Mobile Menu */
  .navbar-menu {
+   display:block;
    text-align: center;
    padding: 1rem 0;
    color: white;
