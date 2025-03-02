@@ -15,36 +15,35 @@ export default function Navbar() {
   if (!isMounted) return null; 
 
   return (
-    <nav className="bg-gray-900  p-4">
-      <div className=" text-white mx-auto flex justify-between items-center">
-       
-        <h1 className="text-xl font-bold flex items-center">
+    <nav className="navbar">
+      <div className="navbar-container">
+        <h1 className="navbar-logo">
           <Smile className="mr-2" /> Meme Verses
         </h1>
 
-      
-        <div className="  hidden md:flex space-x-6">
-          <Link href="/" className=" hover:text-gray-400">Home</Link>
-          <Link href="/memes" className="hover:text-gray-400">Explorer</Link>
-          <Link href="/upload" className="hover:text-gray-400">Upload</Link>
-          <Link href="/leaderboard" className="hover:text-gray-400">Leaderboard</Link>
-          <Link href="/profile" className="hover:text-gray-400">Profile</Link>
+        {/* Desktop Navigation */}
+        <div className="navbar-links">
+          <Link href="/">Home</Link>
+          <Link href="/memes">Explorer</Link>
+          <Link href="/upload">Upload</Link>
+          <Link href="/leaderboard">Leaderboard</Link>
+          <Link href="/profile">Profile</Link>
         </div>
 
-      
+        {/* Mobile Menu Toggle */}
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-  
+      {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden text-white   py-4 text-center">
-          <Link href="/" className="block py-2 hover:text-gray-400">Home</Link>
-          <Link href="/memes" className="block py-2 hover:text-gray-400">Explorer</Link>
-          <Link href="/upload" className="block py-2 hover:text-gray-400">Upload</Link>
-          <Link href="/leaderboard" className="block py-2 hover:text-gray-400">Leaderboard</Link>
-          <Link href="/profile" className="block py-2 hover:text-gray-400">Profile</Link>
+        <div className="navbar-menu">
+          <Link href="/">Home</Link>
+          <Link href="/memes">Explorer</Link>
+          <Link href="/upload">Upload</Link>
+          <Link href="/leaderboard">Leaderboard</Link>
+          <Link href="/profile">Profile</Link>
         </div>
       )}
     </nav>

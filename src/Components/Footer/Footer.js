@@ -8,7 +8,7 @@ const Footer = () => {
       <p className="text-gray-400 text-sm">©2025 MemeVerse. All rights reserved.</p>
 
      
-      <div className="  flex items-center justify-center gap-6 p-4">
+      <div className="footer-icon  flex items-center justify-center gap-6 p-4">
         <Instagram className="w-6 h-6 hover:text-pink-500 cursor-pointer" />
         <Github className="w-6 h-6 hover:text-gray-400 cursor-pointer" />
         <Twitter className="w-6 h-6 hover:text-blue-500 cursor-pointer" />
